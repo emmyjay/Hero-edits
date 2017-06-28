@@ -1,0 +1,27 @@
+h1 {
+  font-size: 1.2em;
+  color: #999;
+  /*margin-bottom: 0;*/
+}
+
+h2 {
+  font-size: 2em;
+}
+
+#wrapper {
+  background-color: #F6F6EF;
+  position: relative;
+  width: 85%;
+  min-height: 80px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  height: 100%;
+}
+
+@media(max-width:768px) {
+   #wrapper {
+      width: 100%;
+      background-color: #fff;
+   }
+}

@@ -1,0 +1,22 @@
+<div *ngIf="hero">
+
+  <h2>{{hero.name }}<button onclick="document.getElementById('id01').style.display='block'" (click)="onSelect(hero)" [class.selected]="hero === selectedHero"> Details</button></h2>
+ 
+  <div>
+    <label>Name: </label>
+
+      <input [(ngModel)]="hero.name" placeholder="name">
+
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+</div>
+
+<div id="id01" class="w3-modal" *ngIf="selectedHero">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+         <p class="her">{{hero.about}}</p>
+      </div>
+    </div>
+  </div>
